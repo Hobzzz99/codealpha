@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translator</h1>
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea spellcheck="false" class="from-text" placeholder="Enter text..."></textarea>
+                <textarea spellcheck="false" readonly class="to-text" placeholder="Translation..."></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <button id="from-speak" title="Listen"><i class="fas fa-volume-up"></i>🔊</button>
+                        <button id="from-copy" title="Copy"><i class="fas fa-copy"></i>📋</button>
+                    </div>
+                    <select id="from-lang"></select>
+                </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i>⇄</li>
+                <li class="row to">
+                    <select id="to-lang"></select>
+                    <div class="icons">
+                        <button id="to-copy" title="Copy"><i class="fas fa-copy"></i>📋</button>
+                        <button id="to-speak" title="Listen"><i class="fas fa-volume-up"></i>🔊</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button id="translate-btn">Translate Text</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
